@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      border: 10px;
+      border-color: black;
+      background-color: #F6D776;
+      height: 100vh;
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: repeat(1fr,4);
+      grid-template-rows: repeat(1fr,8);
+  }
+  .event{
+    display: grid;
+    justify-content: center;
+    font-size: 40px;
+    text-align: center;
+    grid-column: span 4;
+    padding: 10px;
+    margin: 10px;
+  }
+  .seats{
+    display: grid;
+    justify-content: center;
+    grid-area: 2/2/2/1;
+    font-size: 30px;
+    text-align: center;
+    grid-column: span 4 ;
+  }
+  .row1{
+    padding: 10px;
+    margin: 10px;
+    grid-area: 3/3/4/4;
+   
+  }
+  .col{
+    padding: 10px;
+    margin: 10px;
+    grid-area: 2/3/3/3;
+  }
+
+  .col1{
+    padding: 10px;
+    margin: 10px;
+  }
+  .col2{
+    padding: 10px;
+    margin: 10px;
+  }
+  .col3{
+    padding: 10px;
+    margin: 10px;
+  }
+  img{
+    height: 200px;
+    width: 500px;
+    display: grid;
+    grid-area: 3/1/4/1;
+    border: 10px;
+    border-color: black;
+  }
+  .btn{
+    padding: 10px;
+    color: black;
+    background-color: aqua;
+    border-radius: 10%;
+    grid-area: 7/2/7/2;
+  }
+  
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="./events_clipped_rev_1.png" class="rounded float-start" alt="...">
+    <div class="event">Event 1</div>
+    <div class="seats">Number of seats 23</div>
+    <hr>
+    <div class="row1">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Name" aria-label="First name">
+      </div>
+    <div class="row2">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Phone no" aria-label="phone">
+      </div>
+      </div>
+      <div class="row3">
+          <div class="col1">
+            <input type="text" class="form-control" placeholder="Email address" aria-label="Email">
+          </div>
+      </div>
+      <div class="row4">
+        <select class="col" aria-label="Default select example">
+          <option selected>Number of seats</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      <div class="row5">
+            <div class="col3">
+              <input type="text" class="form-control" placeholder="Name of attendee 2 " aria-label="Name of attendee 2">
+            </div>
+            <button type="button" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-primary">Cancel</button>
+      </div>
+        
+</div>
+</div>
+
+</body>
+</html>
